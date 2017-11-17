@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@mipmap/car_user"
+            android:title="Usuario" />
+        <item
+        android:id="@+id/nav_car"
+        android:icon="@mipmap/car_car"
+        android:title="Tu automovil" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@mipmap/map"
+            android:title="gasolineras"
+            />
+        <item
+            android:id="@+id/nav_fuel"
+            android:icon="@mipmap/fueltrue"
+            android:title="Combustible" />
+    </group>
+
+    <item android:title="Configuracion">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compartir" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@mipmap/car_settings"
+                android:title="Configuracion" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@mipmap/log_out"
+                android:title="Cerrar sesion" />
+        </menu>
+    </item>
+
+</menu>

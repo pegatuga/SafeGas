@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "752290621729",
+    "firebase_url": "https://safegas-180418.firebaseio.com",
+    "project_id": "safegas-180418",
+    "storage_bucket": "safegas-180418.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752290621729:android:af915f70615c8143",
+        "android_client_info": {
+          "package_name": "com.example.pegatuga.safegas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752290621729-i2fqmscpcmfsrgjmo99hkv08f5f956i9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pegatuga.safegas",
+            "certificate_hash": "73757860e231edd391d86dfff9b946ec00031a67"
+          }
+        },
+        {
+          "client_id": "752290621729-h51sukqldeb3ne5ampu09f9u8gouueru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsbLx7IfoQV4F1kzSHpBoyQJ6J5tm33e4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752290621729-h51sukqldeb3ne5ampu09f9u8gouueru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
