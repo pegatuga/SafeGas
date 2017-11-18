@@ -1,5 +1,6 @@
 package com.example.pegatuga.safegas;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -25,11 +26,13 @@ public class MainActivity extends AppCompatActivity
     private EditText money,magnav,diseln,premiumr;
     private TextView result;
     private Button calcular;
+    private android.support.v4.app.FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        fragmentManager = getSupportFragmentManager();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         //variables
@@ -46,6 +49,9 @@ public class MainActivity extends AppCompatActivity
                 dividir();
             }
         });
+
+        TableroFragment tableroFragment = new TableroFragment();
+        fragmentManager.beginTransaction().replace(R.id.contenedor, tableroFragment, tableroFragment.getTag()).commit();
 
 //boton amarrillo para reportar la gasolinera
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -119,10 +125,15 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_user) {
 
+
+        }else if (id == R.id.nav_tablero) {
+            TableroFragment tableroFragment = new TableroFragment();
+            fragmentManager.beginTransaction().replace(R.id.contenedor, tableroFragment, tableroFragment.getTag()).commit();
         } else if (id == R.id.nav_car) {
 
         } else if (id == R.id.nav_map) {
-
+            MapFragment mapFragment = new MapFragment();
+            fragmentManager.beginTransaction().replace(R.id.contenedor, mapFragment, mapFragment.getTag()).commit();
         } else if (id == R.id.nav_fuel) {
 
         } else if (id == R.id.nav_share) {
